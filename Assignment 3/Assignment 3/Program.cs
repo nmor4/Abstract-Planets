@@ -12,13 +12,20 @@ using System.Threading.Tasks;
 
 namespace Assignment_3
 {
-    //This is the driver class for the program
+    //This is the driver class for the program, which creates new GiantPlanet and TerrestrialPlanet objects
     class Program
     {
         static void Main(string[] args)
         {
+            GiantPlanet giantPlanet = new GiantPlanet("Jupiter", 139.822, 1898.2,"Gas");
+            TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet("Earth", 12.742, 5.972, true);
+
+            giantPlanet.ToString();
+            terrestrialPlanet.ToString();
         }
 
+
+        //This method confirms that the user press a key before console is closed
         public void WaitforAnyKey()
         {
             throw new System.NotImplementedException();

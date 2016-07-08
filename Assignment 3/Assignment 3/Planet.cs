@@ -118,7 +118,7 @@ namespace Assignment_3
         // OVERRIDDEN TOSTRING METHOD ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public override string ToString()
         {
-            string planetInfo = "Name: "+ this._name +"\nDiameter: " +this._diameter+"\nMass: "+this._mass+"\n";
+            string planetInfo = "Name: "+ this._name +"\nDiameter: " +this._diameter+" thousands of kilometers \nMass: "+this._mass+ " x 10^24 kilograms\n";
            
             Console.WriteLine(planetInfo);
                 return planetInfo;

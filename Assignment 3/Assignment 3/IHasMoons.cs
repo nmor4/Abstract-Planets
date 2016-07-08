@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Assignment_3
-{
-    interface IHasMoons
+{//Defines the method HasMoons, which returns a boolean value
+    public interface IHasMoons
     {
+        bool HasMoons();
     }
 }

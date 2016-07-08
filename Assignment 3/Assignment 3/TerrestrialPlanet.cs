@@ -13,17 +13,25 @@ namespace Assignment_3
 
         public TerrestrialPlanet(string name, double diameter,double mass,bool oxygen) :base(name,diameter,mass)
         {
-            
+            oxygen = this._oxygen;
         }
 
         public bool HasMoons()
         {
-            throw new System.NotImplementedException();
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool Habitable()
         {
-            throw new System.NotImplementedException();
+            if (this._oxygen ==true)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

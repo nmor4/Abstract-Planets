@@ -13,17 +13,25 @@ namespace Assignment_3
 
         public GiantPlanet(string name,double diameter,double mass,string type):base(name,diameter,mass)
         {
-            
+            type = this._type;
         }
 
         public bool HasMoons()
         {
-            throw new System.NotImplementedException();
+            if (MoonCount>0)
+            {
+                return true;
+            }
+             return false;
         }
 
         public bool HasRings()
         {
-            throw new System.NotImplementedException();
+            if (RingCount>0)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

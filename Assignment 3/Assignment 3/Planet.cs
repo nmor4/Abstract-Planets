@@ -24,7 +24,10 @@ namespace Assignment_3
         // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public Planet(string name,double diameter, double mass)
         {
-            
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
+
         }
 
         // PUBLIC PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -33,35 +36,32 @@ namespace Assignment_3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _diameter;
             }
 
-            set
-            {
-            }
+           
         }
 
-        public double Mass
+        public  double Mass
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _mass;
             }
 
-            set
-            {
-            }
+           
         }
 
-        public int MoonCount
+        public  int MoonCount
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._mooncount;
             }
 
             set
             {
+                
             }
         }
 
@@ -69,23 +69,22 @@ namespace Assignment_3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return _name;
             }
 
-            set
-            {
-            }
+            
         }
 
         public double OrbitalPeriod
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._orbitalperiod;
             }
 
             set
             {
+                this._orbitalperiod = value;
             }
         }
 
@@ -93,11 +92,13 @@ namespace Assignment_3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._ringcount;
             }
 
             set
             {
+                this._ringcount = value;
+                
             }
         }
 
@@ -105,18 +106,24 @@ namespace Assignment_3
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._rotationperiod;
             }
 
             set
             {
+                this._rotationperiod = value;
             }
         }
 
         // OVERRIDDEN TOSTRING METHOD ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public override string ToString()
         {
-            throw new System.NotImplementedException();
+            string planetInfo = "Name: "+ this._name +"\nDiameter: " +this._diameter+"\nMass: "+this._mass+"\n";
+           
+            Console.WriteLine(planetInfo);
+                return planetInfo;
+                 
+            
         }
     }
 }

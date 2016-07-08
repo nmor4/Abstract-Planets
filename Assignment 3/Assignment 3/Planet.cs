@@ -61,7 +61,7 @@ namespace Assignment_3
 
             set
             {
-                
+                this._mooncount = value;
             }
         }
 
@@ -116,6 +116,8 @@ namespace Assignment_3
         }
 
         // OVERRIDDEN TOSTRING METHOD ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            //ToString method displays the planet object's Name, Diameter and Mass variables in the console
         public override string ToString()
         {
             string planetInfo = "Name: "+ this._name +"\nDiameter: " +this._diameter+" thousands of kilometers \nMass: "+this._mass+ " x 10^24 kilograms\n";
